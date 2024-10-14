@@ -12,8 +12,8 @@ const User = require('./models/User');
 const seedDB = require('./seed')
 const MongoStore = require('connect-mongo');
 require('dotenv').config();
-const dbURL = 'mongodb://127.0.0.1:27017/e-com';
-// const dbURL = 'mongodb+srv://tripathiaman1011:830333@cluster0.dztrxtf.mongodb.net/food-del';
+// const dbURL = 'mongodb://127.0.0.1:27017/e-com';
+const dbURL = 'mongodb+srv://tripathiaman1011:830333@cluster0.dztrxtf.mongodb.net/food-del';
 
 mongoose.set('strictQuery', true);
 mongoose.connect(dbURL)
