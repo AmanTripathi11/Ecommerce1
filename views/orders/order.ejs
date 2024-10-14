@@ -1,0 +1,27 @@
+<% layout('layouts/boilerplate') -%>
+
+<h1>My Orders</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Order Date</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <% for (let i = 0; i < orders.length; i++) { %>
+          <tr>
+            <td><%= orders[i]._id %></td>
+            <td><%= orders[i].user._id %></td>
+            <td><%= orders[i].quantity %></td>
+            <td><%= orders[i].totalPrice %></td>
+            <td><%= orders[i].createdAt %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
